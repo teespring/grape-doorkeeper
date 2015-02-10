@@ -1,7 +1,9 @@
 require 'grape'
-require 'doorkeeper'
-require 'grape-doorkeeper/grape_oauth2'
-require 'grape-doorkeeper/oauth2'
+require 'grape/api'
 
-module GrapeDoorkeeper
-end
+require 'doorkeeper'
+require 'doorkeeper/oauth/token'
+
+require 'grape-doorkeeper/helpers'
+require 'grape-doorkeeper/request'
+require 'grape-doorkeeper/middleware'
